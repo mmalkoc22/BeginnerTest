@@ -1,0 +1,72 @@
+import numpy as np
+
+
+
+# 1- (10,15,30,45,60) değerlerine sahip bir numpy dizisi oluşturunuz
+np_list1=np.array([10,15,30,45,60])
+# 2- (5-15) arasındaki sayılarla numpy dizisi oluşturunuz
+np_list2=np.arange(5,15)
+# 3- (50-100) arasındak 5'er 5'er artarak numpy dizisi oluşturunuz.
+np_list3=np.arange(50,100,5)
+# 4- 10 elemanlı sıfırlardan oluşan bir dizi oluşturunuz
+np_list4=np.zeros(10)
+# 5- 10 elemanlı birlerden oluşan bir dizi oluşturunuz.
+np_list5=np.ones(10)
+# 6- (0-100) arasında eşit aralıklı 5 sayı üretin
+np_list6=np.linspace(0,100,5)
+#7- (10,30) arasında rastgele 5 tane tamsayı üretin.
+np_list7=np.random.randint(10,30,5)
+#8- [-1,1] arasında 10 tane sayı üretin
+np_list8=np.random.randn(10)
+#9- (3x5) boyutlarında (10-50) arasında rastgele bir matris oluşturunuz.
+np_list9=np.random.randint(10,50,15).reshape(3,5)
+# 10- üretilen matrisin satır ve sütun sayıları toplamını hesaplayınız
+matris = np.random.randint(10,50,15).reshape(3,5)
+rowTotal = matris.sum(axis =1)
+colTotal = matris.sum(axis=0)
+print(matris)
+print(rowTotal)
+print(colTotal)
+# 11- Üretilen matrisin en büyük, en küçük ve ortalaması nedir
+result= matris.max()
+result2=matris.min()
+result3=matris.mean()
+# 12-Üretilen matrisin en büyük değerinin indeksi kaçtır?
+result5=matris.argmax()
+result6=matris.argmax()
+#13- (10,20) arasındaki satıları içeren dizinin ilk 3 elemanını seçiniz.
+arr= np.arange(10,20)
+result7= arr[0:3]
+print(result7)
+#14- Üretilen dizinin elemanlarını tersten yazdırın.
+result8= arr[::-1]
+print(result8)
+#15- Üretilen matrisin ilk satırını seçiniz.
+result9=matris[0]
+print(result9)
+# 16- Üretilen matirisin 2.satır 3. sütunundaki elemanı hangisidir?
+result10= matris[1,2]
+print(result10)
+# 17- Üretilen matrisin tüm satırlarındaki ilk elemanı seçiniz
+result11= matris[:,0]
+print(result11)
+# 18- Üretilen matrisin her bir elemanının karesini alınız.
+result12= matris**2
+print(result12)
+# 19- Üretilen matris elemanlarının hangisi pozitif çift sayıdır
+
+ciftler= matris[matris % 2 ==0]
+result13=ciftler[ciftler>0]
+print(result13)
+print(ciftler)
+
+print(np_list1)
+print(np_list2)
+print(np_list3)
+print(np_list4)
+print(np_list5)
+print(np_list6)
+print(np_list7)
+print(np_list8)
+print(np_list9)
+print(result)
