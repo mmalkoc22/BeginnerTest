@@ -1,3 +1,6 @@
+%Bisection Method for finding the roots of a function
+
+
 function p = mybisectionnn(f, a, b, tol,Nmax)
 disp('Bisection Method'); 
 % Function is for bisection method.
