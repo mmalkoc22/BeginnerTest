@@ -1,5 +1,5 @@
 function [p,iter]=myfalseposition(f,p0,p1,tol,Nmax)
-%Mustafa Malkoç 200219019004
+%Mustafa Malkoç 
 disp('The Method of False Position')
 disp('Iter p0 p1 p f(p)')
 %Step 1
