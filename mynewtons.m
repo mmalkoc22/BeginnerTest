@@ -1,3 +1,6 @@
+% Newtons Iteration formula for finding the roots of funtions
+
+
 function [p,iter]= mynewtons(f,df,p0,tol,Nmax)
 disp('Newtons Method')
 fp0=feval(f,p0);
